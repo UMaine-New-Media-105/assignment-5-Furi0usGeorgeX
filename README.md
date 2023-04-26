@@ -25,3 +25,48 @@ class Bubble {
   
   
   -------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+  Question 2 asks that 50 bubbles be drawn this time. I did so by changing this:
+  
+   for (let bubblesDrawn = 0; bubblesDrawn < 5; bubblesDrawn++) {
+    bubbles[bubblesDrawn];
+    let thisX = random(width);
+    let thisY = random(height);
+    bubbles[bubblesDrawn] = new Bubble(thisX, thisY);
+  }
+}
+
+function draw() {
+  background("black");
+
+  for (let bubblesShown = 0; bubblesShown < 5; bubblesShown++) {
+    bubbles[bubblesShown].move();
+    bubbles[bubblesShown].show();
+  }
+}
+
+to this:
+
+ for (let bubblesDrawn = 0; bubblesDrawn < 50; bubblesDrawn++) {
+    bubbles[bubblesDrawn];
+    let thisX = random(width);
+    let thisY = random(height);
+    bubbles[bubblesDrawn] = new Bubble(thisX, thisY);
+  }
+}
+
+function draw() {
+  background("black");
+
+  for (let bubblesShown = 0; bubblesShown < 50; bubblesShown++) {
+    bubbles[bubblesShown].move();
+    bubbles[bubblesShown].show();
+  }
+}
+
+Just to narrow it down, "bubblesShown < 5;" and "bubblesDrawn <5" were changed from 5 to 50.
+
+------------------------------------------------------------------------------------------------------------------------------------------
