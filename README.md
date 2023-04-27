@@ -22,12 +22,8 @@ class Bubble {
   }
   
   Note that what is being displayed is a function named "frowny". I thought the jittering looked somewhat aggressive, so I changed the bubbles' appearance to reflect that.
-  
-  
+   
   -------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
 
   Question 2 asks that 50 bubbles be drawn this time. I did so by changing this:
   
@@ -70,3 +66,7 @@ function draw() {
 Just to narrow it down, "bubblesShown < 5;" and "bubblesDrawn <5" were changed from 5 to 50.
 
 ------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 3 asks to create two additional classes. The original frowny face class is now a background "particle". The two new classes are breeders and catchers. The breeders are Cryptids, made from the new function Wendigo. The catchers are Swords, made from the new function blade. The swords start on the left, and the cryptids start on the right.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
