@@ -70,3 +70,10 @@ Just to narrow it down, "bubblesShown < 5;" and "bubblesDrawn <5" were changed f
 Question 3 asks to create two additional classes. The original frowny face class is now a background "particle". The two new classes are breeders and catchers. The breeders are Cryptids, made from the new function Wendigo. The catchers are Swords, made from the new function blade. The swords start on the left, and the cryptids start on the right.
 
 -------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 4 asks to enable the breeders, in this simulation they are the "cryptids".
+I followed the tutorial but was unable to get the breeders to populate correctly. Instead, when the breeders come into contact, their "offspring" simply flashes for a single frame on screen before disappearing again. I have agonized over this for days, well past the due date (after several days of trying to figure out why the simulation kept crashing my browser), and am giving up. On to the next question.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 5 asks to enable the catchers, in this case the "swords". We accomplish this by removing a breeder from its array when it comes into contact with a catcher. The code successfully deletes an individual breeder when touched by a catcher, but this does crash the simulation again for some reason.
